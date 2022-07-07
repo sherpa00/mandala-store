@@ -1,0 +1,233 @@
+.product-page {
+    width:100%;
+}
+
+.product-page .main-product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.main-product img {
+    width: 40%;
+}
+
+.main-product .product-info {
+    width: 40%;
+    text-align: left;
+}
+
+.product-info #heading {
+    font-size: 2.5rem;
+}
+
+.product-info #desc {
+    font-size: 1rem;
+}
+
+.product-info .rating {
+    font-size: 30px;
+    color: var(--primary)
+}
+
+.product-info #price {
+    font-size: 2rem;
+    color: black;
+}
+
+.product-info .counter {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0px;
+    margin-top: -25px;
+    padding: 0px;
+}
+
+.counter button {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.counter button:hover {
+    color: dodgerblue
+}
+
+.counter #count {
+    font-size: 24px;
+    padding: 10px;
+}
+
+.product-info #add_to_cart {
+    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+    border: 1px green gray;
+    transition: all 0.6s ease;
+}
+
+.product-info #add_to_cart:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    transform: scale(1.01);
+}
+
+.product-page #go_back {
+    font-size: 24px;
+    color: black;
+    background-color:var(--primary);
+    padding: 8px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .product-page .main-product {
+
+    }
+
+    .main-product img {
+        width: 50%;
+    }
+    
+    .main-product .product-info {
+        width: 30%;
+        text-align: left;
+    }
+    
+    .product-info #heading {
+        font-size: 2rem;
+    }
+    
+    .product-info #desc {
+        font-size: 0.8rem;
+    }
+    
+    .product-info .rating {
+        font-size: 25px;
+        color: var(--primary)
+    }
+    
+    .product-info #price {
+        font-size: 1.5rem;
+        color: black;
+    }
+    
+    .product-info .counter {
+        gap: 10px;
+        margin-top: -30px;
+    }
+    
+    .counter button {
+        font-size: 25px;
+    }
+    
+    .counter #count {
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    .product-info #add_to_cart {
+        font-size: 1.5rem;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .product-page #go_back {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 620px){
+
+    .product-page {
+        
+    }
+
+    .product-page .main-product {
+        
+    }
+
+    .main-product img {
+        width: 50%;
+    }
+    
+    .main-product .product-info {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .product-info #heading {
+        font-size: 1.8rem;
+    }
+    
+    .product-info #desc {
+        font-size: 0.6rem;
+    }
+    
+    .product-info .rating {
+        font-size: 22px;
+        color: var(--primary)
+    }
+    
+    .product-info #price {
+        font-size: 1.3rem;
+        color: black;
+    }
+    
+    .product-info .counter {
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-top: -30px;
+    }
+    
+    .counter button {
+        font-size: 22px;
+    }
+    
+    .counter #count {
+        font-size: 20px;
+        padding: 8px;
+    }
+    
+    .product-info #add_to_cart {
+        font-size: 1.3rem;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .product-page #go_back {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .product-page .main-product {
+        flex-direction: column;
+    }
+
+    .main-product img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .main-product .product-info {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+

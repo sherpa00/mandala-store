@@ -1,0 +1,110 @@
+
+
+.login {
+    background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 50%;
+    margin: 8vh auto;
+    border-radius: 20px;
+    padding: 20px 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.login h1 {
+    font-size: 30px;
+    margin: 5px;
+    color: dodgerblue;
+    font-family: "Rock salt";
+    border-bottom: 1px solid gray;
+}
+
+.login #info {
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.login #info #hello {
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+}
+
+.login form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login form input {
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid dodgerblue;
+    margin: 15px auto;
+    width: 100%;
+    padding: 5px;
+}
+
+.login form a {
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.login form a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.login form button {
+    font-size: 20px;
+    color: white;
+    background-color: dodgerblue;
+    padding: 12px;
+    width: 100%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.login form button:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.login #sign-in {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .login {
+        width: 70%;
+        padding: auto 12%;
+    }
+
+    .login h1 {
+        font-size: 24px;
+    }
+
+    .login #info {
+        font-size: 20px;
+    }
+
+    .login #info #hello {
+        font-size: 24px;
+    }
+
+    .login form {
+        font-size: 16px;
+    }
+}

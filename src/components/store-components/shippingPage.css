@@ -1,0 +1,253 @@
+.shipping-page {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 85%;
+    margin: 50px auto;
+    padding: 0px 20px;
+}
+
+.shipping-page #heading {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0px;
+}
+
+.shipping-page p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.shipping-page ul {
+    list-style: none;
+    margin: 10px auto;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.shipping-page ul li {
+    background-color: lightgray;
+    font-size: 16px;
+    padding: 30px;
+    border: 5px solid white;
+    line-height: 30px;
+    border-radius: 10px;
+    width: 22%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.shipping-page ul li:hover {
+    background-color: white;
+    transform: scale(1.03);
+    border-color: green;
+}
+
+.shipping-page ul #selected {
+    background-color: whitesmoke;
+    border: 5px solid green;
+}
+
+
+.shipping-page ul li span {
+    font-size: 60px;
+}
+
+.shipping-page  .shipping_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.shipping_cont form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.shipping-page form h3 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.shipping-page form label {
+    font-size: 16px;
+    margin: 7px 0px;
+    width: 100%;
+    text-align: left;
+    line-height: 35px;
+}
+
+.shipping-page form label input {
+    font-size: 18px;
+    padding: 10px 0px;
+    text-indent: 8px;
+    width: 98%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+.shipping-page .shipping_btns {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px auto;
+}
+
+.shipping_btns button {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid gray;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 25px;
+    transition: all 0.5s ease;
+}
+
+.shipping_btns button:hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 800px){
+    .shipping-page {
+        width: 90%;
+        margin: auto;
+    }
+
+    .shipping-page #heading {
+        font-size: 1.5rem;
+    }
+
+    .shipping-page p {
+        font-size: 15px;
+    }
+
+    .shipping-page ul {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .shipping-page ul li {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .shipping-page ul li span {
+        font-size: 50px;
+    }
+
+    .shipping-page .shipping_cont form h3 {
+        font-size: 17px;
+    }
+
+    .shipping_cont form label input{
+        font-size: 16px;
+    }
+
+    .shipping-page .shipping_btns button{
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .shipping-page #heading {
+        font-size: 1.4rem;
+    }
+
+    .shipping-page ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shipping-page ul li {
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .shipping-page ul li span {
+        font-size: 30px;
+    }
+
+    .shipping-page .shipping_cont {
+        flex-direction: column;
+    }
+
+    .shipping_cont form {
+        width: 98%;
+    }
+
+    .shipping-page .shipping_btns {
+        width:95%;
+    }
+
+    .shipping-page .shipping_btns button {
+        font-size: 16px;
+        padding: 7px 10px;
+    }
+
+    .shipping-page .shipping_cont form label {
+        font-size: 16px;
+    }
+
+    .shipping-page .shipping_cont form input {
+        font-size: 16px;
+        padding: 5px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .shipping-page ul {
+        grid-template-columns: auto;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .shipping-page ul li {
+        width: 100px;
+        padding: 10px 5px;
+        
+    }
+
+    .shipping-page ul li span {
+        font-size: 20px;
+    }
+
+    .shipping-page .shipping_btns {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shipping-page .shipping_btns button {
+        margin: 5px auto;
+    }
+    
+}
+

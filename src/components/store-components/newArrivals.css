@@ -1,0 +1,63 @@
+.new-arrivals-cont {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+
+}
+.new-arrivals-cont #new_arrivals_heading{
+    font-size: 40px;
+    color: lightcoral;
+    border-left: 10px groove dodgerblue;
+    padding: 10px;
+}
+
+#new_arrivals_heading span {
+    font-size: 40px;
+    color: salmon;
+}
+
+.new-arrivals-cont .new-arrivals {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: 0px auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .new-arrivals-cont #new_arrivals_heading {
+        font-size: 30px;
+    }
+
+    #new_arrivals_heading span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .new-arrivals-cont #new_arrivals_heading {
+        font-size: 26px;
+    }
+
+    #new_arrivals_heading span {
+        font-size: 26px
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .new-arrivals-cont #new_arrivals_heading {
+        font-size: 22px;
+    }
+
+    #new_arrivals_heading span {
+        font-size: 22px
+    }
+}

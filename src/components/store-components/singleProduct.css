@@ -1,0 +1,114 @@
+.single-product {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    padding: 10px 15px;
+    transition: all 0.6s ease;
+}
+
+.single-product img {
+    width: auto;
+    object-fit: contain;
+    height: 200px;
+}
+
+.single-product #name {
+    font-size: 22px;
+    color: var(--primary);
+    margin: 0px;
+    padding: 5px 0px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.single-product #price {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 70%;
+}
+
+.single-product button {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    padding: 8px 0px;
+    background-color: var(--primary);
+    border-radius: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+.single-product button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media  screen and (max-width: 800px) {
+    .single-product #name {
+        font-size: 20px;
+    }
+
+    .single-product #price {
+        font-size: 18px;
+    }
+
+    .single-product button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .single-product img {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 620px){
+
+    .single-product {
+        width: auto;
+    }
+    .single-product #name {
+        font-size: 18px;
+    }
+
+    .single-product #price {
+        font-size: 16px;
+    }
+
+    .single-product button {
+        font-size: 15px;
+        padding: 4px 8px;
+    }
+
+    .single-product img {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .single-product {
+        width: auto;
+    }
+
+    .single-product #name {
+        font-size: 16px
+    }
+
+    .single-product #price {
+        font-size: 15px;
+    }
+
+    .single-product img {
+        width: auto;
+        height: 100px;
+    }
+
+    .single-product button {
+        font-size: 14px;
+    }
+}

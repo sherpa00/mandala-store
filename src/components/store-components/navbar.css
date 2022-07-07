@@ -1,0 +1,249 @@
+:root {
+    --primary: hsla(232, 73%, 65%, 1);
+}
+
+.App .store .store-navbar {
+    background-color: var(--primary);
+    width: 100%;
+    margin: 0px;
+    z-index: 1;
+}
+
+.store-navbar .upper-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    z-index: 999;
+}
+
+.upper-nav #logo {
+    font-size: 30px;
+    color: wheat;
+    border: 2px solid white;
+    padding: 3px;
+}
+
+.upper-nav #search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+}
+
+#search #search-icon span{
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+#search #search-icon span:hover {
+    color: white;
+}
+
+#search #cart {
+    cursor: pointer;
+    transition: all 0.6s ease;
+    padding: 0px;
+    margin: 0px 30px;
+}
+
+#search #cart i {
+    font-size: 40px;
+}
+
+#search #cart i:hover {
+    color: white;
+}
+
+#search #cart #badge {
+    font-size: 12px;
+    text-align: center;
+    background-color: coral;
+    color: black;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: absolute;
+}
+
+#search #cart:hover {
+    color: white;
+}
+
+#search #login {
+    font-size: 20px;
+    color:black;
+    background-color: dodgerblue;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: all 0.6s ease;
+}
+
+#search #login:hover {
+    color: white;
+}
+
+#search h2 span{
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#search h2 span:hover {
+    color: white;
+}
+
+.store-navbar .lower-nav {
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.lower-nav #main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.lower-nav #main-nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+#main-nav li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 70px;
+}
+
+#main-nav li a:hover {
+    color: black;
+}
+
+#main-nav #dropdown {
+    width: 170px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 71px;
+    left: 43%;
+    display: none;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+
+.store-navbar .bottom-nav {
+    width: 100%;
+    position: fixed;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    display: none;
+    z-index: 999;
+}
+
+.bottom-nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-nav ul li {
+    padding: 20px 0px;
+    
+}
+
+.bottom-nav ul li a {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-nav ul li span {
+}
+
+.bottom-nav ul li #cart  {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    color: wheat
+}
+
+.bottom-nav ul li #cart:hover {
+    color: black;
+}
+
+.bottom-nav ul li a:hover {
+    color:black;
+}
+
+
+
+/*Responsiveness*/
+@media screen and (max-width: 800px){
+    .store-navbar .upper-nav {
+        flex-direction: column;
+    }   
+    .upper-nav #search {
+        justify-content: space-around;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .store-navbar .upper-nav #logo {
+        display: none;
+    }
+    .store-navbar .upper-nav #search p,#search button,#search h2, .lower-nav  {
+        display: none;
+    }
+
+    .store-navbar .upper-nav #search {
+        display: none;
+    }
+
+    .store-navbar .upper-nav #search input {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .store-navbar .bottom-nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .store-navbar #logo {
+        font-size: 20px;
+    }
+
+    .store-navbar .bottom-nav ul li a{
+        font-size: 24px;
+    }
+
+    .store-navbar .bottom-nav ul li #cart {
+        font-size: 28px;
+    }
+}
+
+

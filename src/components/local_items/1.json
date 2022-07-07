@@ -1,0 +1,8 @@
+{
+    "name": "Local Table",
+    "price": "$10",
+    "description": "Table made with the straws of paddy.",
+    "type": "local_item",
+    "stars": "3",
+    "quantity": "4"
+}

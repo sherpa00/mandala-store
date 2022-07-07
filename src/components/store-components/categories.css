@@ -1,0 +1,116 @@
+.category-page {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-page .category-btn {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    margin-bottom: 60px;
+}
+
+.category-btn button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    font-family: "Rock salt";
+}
+
+.category-btn button:hover {
+    transform: scale(0.9);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.category-btn #mandala {
+    background-color: lightpink;
+}
+
+.category-btn #art {
+    background-color: lightseagreen;
+}
+
+.category-btn #local_item {
+    background-color: lightsalmon;
+}
+
+.category-btn #anceint_item {
+    background-color: lightsteelblue;
+}
+
+.category-page .category_single {
+    padding: 0px;
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.category_single .single-product {
+    width: 200px;
+}
+
+.category_single .single-product img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px){
+    .category-page .category-btn button {
+        font-size: 1rem;
+        padding:0.8rem 1.5rem;
+    }
+
+    .category-page .category_single {
+        grid-template-columns: auto auto;
+    } 
+}
+
+@media screen and (max-width: 650px){
+    .category-page .category-btn button {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.1rem;
+    }
+
+    .category-page .category_single .single-product{
+        width: 175px
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+    .category-page .category-btn {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .category-page .category_single {
+        grid-template-columns: auto;
+    }
+
+    .category-page .category_single .single-product{
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 260px){
+    .category-page .category-btn  {
+        grid-template-columns: auto;
+    }
+}

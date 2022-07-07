@@ -1,0 +1,836 @@
+
+
+header {
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: hsla(232, 73%, 65%, 1);
+    position: fixed;
+    top: 0;
+    height: 15vh;
+    z-index: 1;
+    /*background-color: #b597f6*/
+}
+
+nav h1 {
+    font-size: 24px;
+    border: 2px solid white;
+    color: wheat;
+    padding: 5px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 12px;
+}
+
+nav ul li a {
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+nav ul li button {
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    color: hsla(232, 73%, 65%, 1);
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav #bar {
+    color: white;
+    display: none;
+}
+
+#bar span {
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#bar span:hover {
+    color: black;
+}
+
+header .heading {
+    height: 80vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.heading .info {
+    width: 40%;
+    text-align: left;
+}
+
+.heading .info h2 {
+    text-align: left;
+    font-size: 35px;
+    color: hsla(232, 73%, 65%, 1);
+}
+
+.info h2 span {
+    font-size: 67px;
+}
+
+.info h2 #one {
+    color: burlywood;
+}
+
+.info h2 #two {
+    color: lightcoral;
+}
+
+.info h2 #three {
+    color: palevioletred;
+}
+
+.info h2 #four {
+    color: violet;
+}
+
+.info .btnGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.btnGroup button {
+    width: 180px;
+    font-size: 20px;
+    color: white;
+    background-color: hsla(232, 73%, 65%, 1);
+    cursor: pointer;
+    transition: all 0.6s ease;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 10px;
+    transition: all 0.6s ease;
+}
+
+.btnGroup #start-shoping {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.btnGroup #start-shoping:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: hsla(232, 73%, 65%, 1);
+}
+
+.btnGroup button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: scale(1.02);
+}
+
+
+.heading .image-cont {
+    background-image: url("./images/landing-home.webp");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    width: 50%;
+}
+
+.App main {
+    width: 100%;
+}
+
+main .about-us {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about-us .about-us-info {
+    width: 40%;
+    text-align: left;
+}
+
+.about-us-info h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: hsla(232, 73%, 65%, 1);
+    border-bottom: 1px solid gray;
+}
+
+.about-us-info p {
+    font-size: 18px;
+    color: black;
+    line-height: 22px;
+}
+
+.about-us-info button {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: hsla(232, 73%, 65%, 1);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.about-us img {
+    width: 45%;
+    transform: rotate(5deg);
+    transition: all 0.6s ease;
+}
+
+.about-us img:hover {
+    transform: rotate(0deg);
+
+}
+
+.App .services {
+    margin-top: 15vh;
+}
+
+.services h2 {
+    font-size: 40px;
+    color: hsla(232, 73%, 65%, 1);
+}
+
+.services #service-info {
+    font-size: 18px;
+    color: black;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.services ul {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+}
+
+.services ul li {
+    font-size: 20px;
+}
+
+.services ul li span {
+    font-size: 100px;
+}
+
+.services ul li #one {
+    color: lightgreen
+}
+
+.services ul li #two {
+    color: chocolate
+}
+
+.services ul li #three {
+    color: skyblue
+}
+
+.services ul li #four {
+    color: hotpink
+}
+
+.services .services-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px auto;
+    gap: 70px;
+    width: 90%;
+}
+
+.services-cont div {
+    filter: brightness(-100);
+    padding: 20px;
+    border-radius: 2px;
+    text-align: left;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.services-cont div h3 {
+    margin: 0px;
+    font-size: 35px;
+    /*font-family: 'Fredoka', sans-serif;*/
+    font-family: 'Rock Salt', cursive;
+}
+
+.services-cont div p {
+    font-size: 20px;
+    color: black;
+}
+
+.services-cont div button {
+    font-size: 20px;
+    color: black;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.services-cont .mandala-service {
+    background-color: lightgreen;
+}
+
+.services-cont .paintings-service {
+    background-color: lightsalmon
+}
+
+.services-cont .local-service {
+    background-color: lightblue
+}
+
+.services-cont .ancient-service {
+    background-color: pink
+}
+
+.App main .contact {
+    margin: 50px auto;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: hsla(232, 73%, 65%, 1)
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsla(232, 73%, 65%, 1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 60%;
+    margin: 5px auto;
+}
+
+.contact form label{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+.contact form input {
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact form textarea {
+    font-size: 20px;
+    height: 30vh;
+    resize: none;
+}
+
+.contact form button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: lightgreen;
+    margin-top: 30px;
+    color: black;
+}
+
+.contact h3 {
+    font-size: 90px;
+    color: hsla(232, 73%, 65%, 1);
+    margin-bottom: 20px;
+}
+
+.contact #start {
+    font-size: 24px;
+    color: white;
+    background-color: hsla(232, 73%, 65%, 1);
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.App footer {
+    background-color: hsla(232, 73%, 65%, 1);
+    padding: 20px;
+}
+
+footer .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list #navs {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#navs li {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+}
+
+#navs li:hover {
+    text-decoration: underline;
+}
+
+.list #social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#social li {
+    font-size: 45px;
+    list-style: none;
+    padding: 20px;
+}
+
+#social li span {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#social li span:hover {
+    color: white;
+}
+
+
+/* responsiveness */
+@media screen and (max-width: 1000px) {
+    header nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30vh;
+    }
+
+    header nav ul {
+        width: 100%;
+        padding: 0px;
+    }
+
+    header .heading .info h2 {
+        font-size: 38px;
+    }
+
+    .heading .info span {
+        font-size: 50px;
+    }
+
+    .heading .image-cont {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .heading .info h2 {
+        font-size: 35px;
+    }
+
+    .heading .info span {
+        font-size: 45px;
+    }
+
+    .heading .image-cont {
+        height: 70vh;
+        width: 50%;
+    }
+
+    .heading .info .btnGroup button {
+        font-size: 20px;
+        padding: 5px 15px;
+        width: auto;
+    }
+
+    main .about-us {
+        margin-top: 100px;
+    }
+
+    .aboutt-us img {
+        width: 50%;
+    }
+
+    .about-us-info h2 {
+        font-size: 25px;
+    }
+
+    .about-us-info p {
+        font-size: 16px;
+    }
+
+    .about-us-info button {
+        padding: 8px 10px;
+    }
+
+    .contact h3 {
+        font-size: 70px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-around;
+        transition: all 0.6s ease-in-out;
+        height: 13vh;
+    }
+
+    header nav ul {
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        width: auto;
+        opacity: 0;
+        height: 40vh;
+        left: -150%;
+        top: 10vh;
+        right: 0px;
+        bottom: 0px;
+        transition: all 0.6s ease;
+        background: hsla(232, 73%, 65%, 1);
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    header nav #bar {
+        display: flex;
+    }
+
+    header .heading .info h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    header .heading .info h2 span {
+        font-size: 45px;
+    }
+
+    header .heading {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-top: 25vh;
+        padding: 0;
+        text-align: center;
+        width:100%;
+    }
+
+    .heading .image-cont {
+        height: 30vh;
+        width: 95%;
+    }
+
+    .heading .info .btnGroup button {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-top: 20px;
+    }
+
+    header .heading .info {
+        text-align: center;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+
+    .about-us-info h2 {
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+    .about-us-info p {
+        font-size: 14px;
+    }
+
+    .about-us-info button {
+        margin-top: 0px;
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .services h2 {
+        font-size: 30px;
+    }
+
+    .services ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+
+    .services ul li span{
+        font-size: 70px;
+    }
+
+    .services .services-cont {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+
+    .services-cont div {
+        padding: 15px;
+    }
+
+    .services-cont div h3 {
+        font-size: 30px;
+    }
+
+    .services-cont div p {
+        font-size: 18px;
+    }
+
+    .services-cont div button {
+        padding: 6px 8px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .contact form {
+        padding: 30px;
+    }
+
+    .contact form label {
+        font-size: 18px;
+    }
+
+    .contact form textarea {
+        font-size: 18px;
+    }
+
+    .contact form button {
+        font-size: 19px;
+    }
+
+    .contact h3 {
+        font-size: 50px;
+    }
+
+    .App footer {
+        padding: 15px;
+    }
+
+    footer .list #navs li {
+        font-size: 20px;
+    }
+
+    footer#social li {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav h1 {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    nav #bar {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .heading .info h2 {
+        font-size: 25px;
+    }
+
+    .heading .info h2 span {
+        font-size: 30px;
+    }
+
+    .heading .btnGroup button {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .heading .image-cont {
+        width: 80%;
+        display: none;
+    }
+
+    main .about-us {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 12vh;
+    }
+
+    .about-us img {
+        width: 80%;
+        padding: 0px;
+
+    }
+
+    .about-us .about-us-info {
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-us-info h2 {
+        font-size: 25px;
+    }
+
+    .about-us-info p {
+        font-size: 16px;
+    }
+
+    .about-us-info button {
+        padding: 8px 10px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .services ul li span{
+        font-size: 40px;
+    }
+
+    .services .services-cont {
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .services-cont div {
+        padding: 10px;
+    }
+
+    .services-cont div h3 {
+        font-size: 24px;
+    }
+
+    .services-cont div p {
+        font-size: 16px;
+    }
+
+    .services-cont div button {
+        padding: 4px 6px;
+    }
+
+    .contact h2 {
+        font-size: 26px;
+    }
+
+    .contact form {
+        padding: 25px;
+        width: 80%;
+    }
+
+    .contact form label {
+        font-size: 16px;
+    }
+
+    .contact form textarea {
+        font-size: 16px;
+        height: 15vh;
+    }
+
+    .contact form button {
+        font-size: 18px;
+    }
+
+    .contact h3 {
+        font-size: 40px;
+    }
+
+    .contact #start {
+        font-size: 18px;
+        padding: 7px;
+    }
+
+    .App footer {
+        padding: 10px;
+    }
+
+    footer .list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .list ul {
+        padding: 0px;
+    }
+
+    footer .list #navs li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer#social li {
+        padding: 8px;
+    }
+
+    #social li span {
+        font-size: 30px;
+    }
+
+}

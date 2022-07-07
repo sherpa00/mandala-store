@@ -1,0 +1,8 @@
+{
+    "name": "Local Necklaces",
+    "price": "$5",
+    "description": "Necklaces made by local Nepalese People with simple materials like plastic and metals.",
+    "type": "local_item",
+    "stars": "3.5",
+    "quantity": "4"
+}

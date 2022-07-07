@@ -1,0 +1,252 @@
+.cart-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cart-page button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.cart-page .shoping-cart {
+    width: 65%;
+    padding: 0px;
+    margin-bottom: 15px;
+
+}
+
+.shoping-cart h2 {
+    font-size: 2rem;
+}
+
+.shoping-cart #remove_all {
+    font-size: 20px;
+    color: black;
+    background-color: crimson;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.shoping-cart .cart-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.cart-products .cart-product {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.cart-product img {
+    width: 20%;
+}
+
+.cart-product button {
+    font-size: 30px;
+    color: crimson;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
+
+.cart-product button:hover {
+    color: ;
+}
+
+.cart-page .summary {
+    width: 25%;
+    background-color: whitesmoke;
+    padding: 15px 0px;
+}
+
+.summary h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.summary h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.summary #total_cost {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.summary #check-out {
+    font-size: 20px;
+    color: white;
+    background-color: seagreen;
+    padding: 10px 0px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.summary .summary-info {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-width: 2px 0px;
+    border-style: dotted;
+    border-color: darkgray;
+    padding: 8px 0px;
+}
+
+.summary-info h4 {
+    font-size: 20px;
+    margin: 7px 0px;
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+.summary-info label {
+    font-size: 18px;
+    margin-top: 20px;
+    color: blue;
+}
+
+.summary p {
+    font-size: 14px;
+    color: gray;
+    text-align: left;
+    margin: 0px;
+}
+
+.summary-info input {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.summary-info button {
+    font-size: 16px;
+    color: black;
+    padding: 5px 7px;
+    cursor: pointer;
+    margin: 10px 0px;
+    background-color: skyblue;
+}
+
+@media screen and (max-width: 900px){
+    .cart-page {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart-page .shoping-cart {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .shoping-cart button {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .shoping-cart  #remove_all {
+        font-size: 18px;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+
+    .cart-page .summary {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summary .summary-info {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .cart-page .shoping-cart h2 {
+        font-size: 20px;
+    }
+
+    .shoping-cart #remove_all {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .cart-page .shoping-cart .cart-products .cart-product{
+    }
+
+    .cart-product h3 {
+        font-size: 16px;
+    }
+
+    .summary h2 {
+        font-size: 24px;
+    }
+
+    .summary h3 {
+        font-size: 16px;
+    }
+
+    .summary #total_cost {
+        font-size: 2rem;
+    }
+
+    .summary .summary-info h4 {
+        font-size: 16px;
+    }
+
+    .summary-info label {
+        font-size: 17px;
+    }
+
+    .summary-info input {
+        font-size: 16px;
+    }
+
+    .summary #check-out {
+        font-size: 18px;
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cart-page .shoping-cart .cart-products .cart-product {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        line-height: 18px;
+        width: 90%;
+    }
+
+    .cart-product img {
+        width: 50%;
+    }
+
+    .cart-product h3 {
+        margin: 7px;
+        padding: 0px;
+    }
+}

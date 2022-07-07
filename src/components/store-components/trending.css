@@ -1,0 +1,63 @@
+.trending-cont {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+
+}
+.trending-cont #trending_heading{
+    font-size: 40px;
+    color: lightseagreen;
+    border-left: 10px groove dodgerblue;
+    padding: 10px;
+}
+
+#trending_heading span {
+    font-size: 40px;
+    color: green;
+}
+
+.trending-cont .trending {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: whitesmoke;
+    margin: 0px auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    .trending-cont #trending_heading {
+        font-size: 30px;
+    }
+
+    #trending_heading span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .trending-cont #trending_heading {
+        font-size: 26px;
+    }
+
+    #trending_heading span {
+        font-size: 26px
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .trending-cont #trending_heading {
+        font-size: 22px;
+    }
+
+    #trending_heading span {
+        font-size: 22px
+    }
+}
